@@ -9,7 +9,7 @@ gems:                [jekyll-paginate]
 title:               'JURUO怎么写'
 tagline:             "qwertier's blog"
 description:         '蒟蒻的学习思考'
-url:                 'qwertier.cn'
+url:                 'blog.qwertier.cn'
 #baseurl: ''
 paginate:            5
 
