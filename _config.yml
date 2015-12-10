@@ -11,7 +11,7 @@ tagline:             "qwertier's blog"
 description:         '蒟蒻的学习思考'
 url:                 'blog.qwertier.cn'
 #baseurl: ''
-paginate:            1
+paginate:            5
 
 # About/contact
 author:
