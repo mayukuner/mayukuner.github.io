@@ -1,6 +1,6 @@
 ---
 layout: page
-title: archive
+title: Archive
 ---
 
 {% for post in site.posts %}
@@ -14,6 +14,9 @@ title: archive
 {% endif %}
 {% endunless %}
 
-<a href="{{ post.url }}" target="_self"> {{ post.title }}  <span class="pull-right">{{ post.date | date:'%m月%d日' }}</span>
+<a href="{{ post.url }}" target="_self"> 
+  <span class="pull-left">{{ post.title }}</span>  <span class="pull-right">{{ post.date | date:'%m月%d日' }}</span>
+</a
+><br/>
 
 {% endfor %}
