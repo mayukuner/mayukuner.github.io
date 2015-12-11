@@ -15,7 +15,7 @@ title: Archive
 {% endunless %}
 
 <a href="{{ post.url }}" target="_self"> 
-  <span class="pull-left">{{ post.title }}</span>  <span class="pull-right">{{ post.date | date:'%m月%d日' }}</span>
+  {{ post.title }}<span style="float:right">{{ post.date | date:'%m月%d日' }}</span>
 </a
 ><br/>
 
