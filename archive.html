@@ -1,0 +1,19 @@
+---
+layout: default
+title: Home
+---
+
+{% for post in site.posts %}
+{% unless post.next %}
+<h1 class="page-data-year">{{ post.date | date: '%Y' }}</h1>
+{% else %}
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+{% if year != nyear %}
+<h1 class="page-data-year">{{ post.date | date: '%Y' }}</h1>
+{% endif %}
+{% endunless %}
+
+<a href="{{ post.url }}" target="_self"> {{ post.title }}  <span class="pull-right">{{ post.date | date:'%mÔÂ%dÈÕ' }}</span>
+
+{% endfor %}
