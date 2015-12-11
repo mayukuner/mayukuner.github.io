@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Aboutt
 ---
 本人大一，爱好广泛，欢迎交流
 
