@@ -12,7 +12,7 @@ description:         '蒟蒻的学习思考'
 url:                 'blog.qwertier.cn'
 #baseurl: ''
 paginate:            5
-markdown:            kramdown
+#markdown:            kramdown
 
 # About/contact
 author:
