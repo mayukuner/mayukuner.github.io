@@ -1,5 +1,5 @@
 ---
-layout: post:
+layout: post
 title: python课程总结
 ---
 
