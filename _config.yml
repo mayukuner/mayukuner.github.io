@@ -12,7 +12,7 @@ url:                 'http://blog.qwertier.cn'
 baseurl:             ''
 paginate:            5
 markdown:            kramdown
-pygments:            true
+highlighter:         rouge
 
 # About/contact
 author:
