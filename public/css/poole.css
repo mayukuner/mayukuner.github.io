@@ -270,6 +270,10 @@ tbody tr:nth-child(odd) th {
   font-weight: 300;
 }
 
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
 
 /*
  * Messages
