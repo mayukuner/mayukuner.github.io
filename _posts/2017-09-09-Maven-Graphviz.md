@@ -15,15 +15,15 @@ title: 在Eclipse项目中通过Maven使用其他包 (Package)的方法 (软工�
 
 如果想要使用Maven，首先需要新建Maven工程。菜单栏里"File" - "New" - "Other"，弹出的"New"对话框中，选择"Maven" - "Maven Project"，然后点击"Next"。
 
-![New](/public/images/Maven-Graphviz/new_maven_project.png){: .center-image}
+![New]({{site.url}}/public/images/Maven-Graphviz/new_maven_project.png){: .center-image}
 
 接下来，一路"Next"，随便填好"Group ID"和"Artifact ID"，点击"Finish"，就可以新建一个Maven工程。
 
-![New2](/public/images/Maven-Graphviz/new_maven_project2.png){: .center-image}
+![New2]({{site.url}}/public/images/Maven-Graphviz/new_maven_project2.png){: .center-image}
 
 在"Package Explorer"中，选择刚才新建的项目，右键 - "Maven" - "Add Dependency"，搜索"graphviz-java"，然后就能找到对应的库，选中确认即可。
 
-![add_dependency](/public/images/Maven-Graphviz/add_dependency.png){: .center-image}
+![add_dependency]({{site.url}}/public/images/Maven-Graphviz/add_dependency.png){: .center-image}
 
 另外，graphviz-java还需要日志记录的依赖，按刚才添加graphviz-java的方法添加SLF4J或者Log4j均可 (graphviz-java的Github repo中有提示)。
 

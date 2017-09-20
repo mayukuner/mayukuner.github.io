@@ -28,19 +28,19 @@ title: 在Eclipse上通过Maven配置Tomcat 9.0 + Struts 2.5 (软工课程相关
 
 然后在"Window"-"Preferences"-"Server"-"Runtime Environments"里配置好Tomcat，使Eclipse能找到、正确调用Tomcat。
 
-![](public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/configuring_tomcat.png){:center-image}
+![]({{site.url}}/public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/configuring_tomcat.png){:center-image}
 
 ### 新建项目
 
 这里我们新建一个Dynamic Web Project项目: "File"-"New"-"Other.."-"Web"-"Dynamic Web Project"。
 
-![](public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/new_project_1.png){:center-image}
+![]({{site.url}}/public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/new_project_1.png){:center-image}
 
 两次"Next"即可，在最后一步可以让向导帮我们生成web.xml。
 
 新建完项目之后，目录结构如下：
 
-![](public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/new_project_2.png){:center-image}
+![]({{site.url}}/public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/new_project_2.png){:center-image}
 
 如果libraries里没有Tomcat的库，可以在项目的属性设置里的"Java Build Path"中，"Add Library"-"Server Runtime"-"Apache Tomcat V9.0"，把Tomcat的库加进Build Path。
 
@@ -65,7 +65,6 @@ title: 在Eclipse上通过Maven配置Tomcat 9.0 + Struts 2.5 (软工课程相关
 		<filter-name>struts2</filter-name>
 		<url-pattern>*.action</url-pattern>
 	</filter-mapping>
-</filter-mapping>
 ```
 
 接下来在"Java Resources/src"中新建struts.xml，填入以下代码，将"HelloWorld.action"映射到"HelloWorld.jsp"，中间需HelloWorld类处理：
@@ -134,10 +133,10 @@ public class HelloWorld extends ActionSupport {
 这样就基本配置好了一个基于Struts的Java Web项目。想要启动它的话，只需要右击项目名-"Run As"-"Run On Server"，
 
 
-![](public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/run_on_server.png){:center-image}
+![]({{site.url}}/public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/run_on_server.png){:center-image}
 
 一路Next即可。
 
 打开浏览器，地址栏输入"http://localhost:8080/test2333/HelloWorld.action"，就能看到效果了。
 
-![](public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/page_on_chrome.png){:center-image}
+![]({{site.url}}/public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/page_on_chrome.png){:center-image}
