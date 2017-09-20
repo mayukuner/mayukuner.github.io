@@ -11,16 +11,17 @@ title: 在Eclipse上通过Maven配置Tomcat 9.0 + Struts 2.5 (软工课程相关
 
 通过"Help"-"Install New Software"安装的：
 
-> Data Tools Platform Extender SDK, Data Tools Platform Enablement Extender SDK (数据库可视化管理相关)
-> Eclipse Java EE Developer Tools
-> Eclipse Java Web Developer Tools
-> Eclipse Web Developer Tools
-> Eclipse XML Editors and Tools
-> JST Server Adapters, JST Server Adapters Extensions
+    1. Data Tools Platform Extender SDK, Data Tools Platform Enablement Extender SDK (数据库可视化管理相关)
+    2. Eclipse Java EE Developer Tools
+    3. Eclipse Java Web Developer Tools
+    4. Eclipse Web Developer Tools
+    5. Eclipse XML Editors and Tools
+    6. JST Server Adapters, JST Server Adapters Extensions
 
 通过"Help"-"Eclipse Marketplace"安装的：
 
-> Tomcat Plugin (后来发现只支持到7.0，于是卸载了，实际上这东西也没什么大用)
+    1. Tomcat Plugin (后来发现只支持到7.0，于是卸载了，实际上这东西也没什么大用)
+    2. Emacs+ (这玩意太好用了，完美还原Emacs的快捷键)
 
 ### 安装、配置Tomcat
 
@@ -137,6 +138,6 @@ public class HelloWorld extends ActionSupport {
 
 一路Next即可。
 
-打开浏览器，地址栏输入"http://localhost:8080/test2333/HelloWorld.action"，就能看到效果了。
+打开浏览器，地址栏输入"[localhost:8080/test2333/HelloWorld.action](localhost:8080/test2333/HelloWorld.action)"，就能看到效果了。
 
 ![]({{site.url}}/public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/page_on_chrome.png){:center-image}
