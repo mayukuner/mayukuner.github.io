@@ -140,4 +140,6 @@ public class HelloWorld extends ActionSupport {
 
 打开浏览器，地址栏输入"[localhost:8080/test2333/HelloWorld.action](localhost:8080/test2333/HelloWorld.action)"，就能看到效果了。
 
+**如果404错误（正如我之前遇到的），那么可以检查一下Console里的错误信息，如果有NoClassException错误，可以试试把structs的lib文件放到tomcat安装路径下的lib文件夹中。**
+
 ![]({{site.url}}/public/images/Configuring-Maven-Tomcat-Struts-on-Eclipse/page_on_chrome.png){:center-image}
