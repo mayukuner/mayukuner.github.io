@@ -21,13 +21,13 @@ layout: post
 
 要做的项目需要从老师给定点的列表中选，通过民主决议，我们一致决定做网页更新订阅[^1]。然而不幸的是，这个被别人做了，于是就做了个类似的好友动态的订阅网站。效果如下：
 
-![好友动态展示]({{ site.baseurl }}/public/after-1st-iteration/show_activities.png)
+![好友动态展示]({{ site.baseurl }}/public/images/after-1st-iteration/show_activities.png)
 <center>下拉自动获取内容，通过点击内容展开折叠</center>
 
-![好友活跃度分析]({{ site.baseurl }}/public/after-1st-iteration/show_vitalities.png)
+![好友活跃度分析]({{ site.baseurl }}/public/images/after-1st-iteration/show_vitalities.png)
 <center>分析汪泽堃同学在一天内的知乎活跃度情况（因为服务器时区设置问题，横轴时间应该+8）</center>
 
-![好友设置]({{ site.baseurl }}/public/after-1st-iteration/config_user.png)
+![好友设置]({{ site.baseurl }}/public/images/after-1st-iteration/config_user.png)
 
 ### 历程
 
@@ -35,7 +35,7 @@ layout: post
 
 为了不浪费时间，三个人能平行推进，我们决定三人分别负责前端（我），后端（ljr）和爬虫（hy）。我和ljr大爷还专门写了个接口文档。
 
-![接口文档]({{ site.baseurl }}/public/after-1st-iteration/interface.png)
+![接口文档]({{ site.baseurl }}/public/images/after-1st-iteration/interface.png)
 
 但是小队仍然遇到了一些障碍。对我而言，主要是前端的交互设计。
 
