@@ -45,14 +45,15 @@ main .project-intro-txt {
     margin: 0 5% 10% 0;
     float: right;
     width: 500px;
-    font-size: 0.8vw;
 }
 main .project-intro-txt h2 {
     margin: 15px 0px;
+    font-size: 20px;
 }
 
 main .project-intro-txt p {
     margin: 0px;
+    font-size: 15px;
 }
 
 main .detailed-intro {
