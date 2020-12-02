@@ -1,0 +1,107 @@
+main {
+    display: block;
+    max-width: 860px;
+    margin: 100px auto 100px;
+    overflow: hidden;
+}
+
+main .brief-intro {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main .brief-intro .position {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+}
+
+main .project-list {
+    margin-top: 200px;
+    width: 100%;
+}
+
+main  .project-intro {
+    width: 100%;
+    height: 250px;
+    opacity: 70%;
+}
+
+
+main  .project-intro:hover {
+    width: 100%;
+    height: 250px;
+    opacity: 100%;
+}
+
+main .project-intro-img {
+    margin: 0 2%;
+    width: 20%;
+    float: left;
+}
+main .project-intro-txt {
+    margin: 0 5% 10% 0;
+    float: right;
+    width: 500px;
+    font-size: 0.8vw;
+}
+main .project-intro-txt h2 {
+    margin: 15px 0px;
+}
+
+main .project-intro-txt p {
+    margin: 0px;
+}
+
+main .detailed-intro {
+    width: 100%;
+    /* height: 500px; */
+}
+
+main .detailed-intro img {
+    width: 400px;
+    float: left;
+    margin: 20px 50px 40px 0;
+    /* display: block; */
+}
+
+
+
+main .detailed-intro p {
+    float: right;
+    /* width: 550px; */
+    margin: 40px 0px;
+    font-size: 19px;
+    line-height: 30px; 
+    /* display: block; */
+}
+
+main .detailed-intro h1 {
+    font-size: 30px;
+    vertical-align: middle;
+    float: left;
+}
+
+main .detailed-intro h1 img {
+    height: 20px;
+    width: auto;
+    float: right;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:visited {
+    color: black;
+}
+
+main .detailed-intro canvas {
+    width: 100%;
+}

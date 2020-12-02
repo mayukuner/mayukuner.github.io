@@ -1,39 +1,47 @@
----
-layout: default
-title: Home
----
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
-
-<center><a href="http://www.miitbeian.gov.cn/" target="_blank" style="font-size: small">鲁ICP备16001914号</a></center>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Yukun Ma's Personal Webpage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-name"><a href="index.html">Yukun Ma</a></div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="index.html" class="showing">Projects</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+                <li><a href="bio.html">Bio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="brief-intro">Welcome to Yukun Ma's homepage!
+            <p class="position">Second-year Master Student in Computer Science @ Northwestern University</p>
+        </div>
+        <div class="project-list">
+            <a href="sparse.html">
+                <div class="project-intro">
+                    <img class="project-intro-img" src="img/sparse.png" alt="An image illustrating sparse matrix">
+                    <div class="project-intro-txt">
+                        <h2>Learning <i>N:M</i> Fine-grained Structured Sparse Neural Networks From Scratch</h2>
+                        <p>This project aims to train a <i>N:M</i> sparse neural network from scratch. <br/>
+                            It has been submitted to International Conference on Learning Representations (ICLR) 2021.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="sam.html">
+                <div class="project-intro">
+                    <img class="project-intro-img" src="img/CRANlogo.png" alt="Icon of The Comprehensive R Archive Network (CRAN)">
+                    <div class="project-intro-txt">
+                        <h2>SAM: Sparse Additive Modelling</h2>
+                        <p>This is an R package for general linear models. So far, SAM has been downloaded over 28,000 times.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+</body>

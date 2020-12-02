@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/Chart.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-name"><a href="index.html">Yukun Ma</a></div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="index.html" class="showing">Projects</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+                <li><a href="bio.html">Bio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="detailed-intro">
+            <h1>Learning <i>N:M</i> Fine-grained Structured Sparse Neural Networks From Scratch</h1>
+            <p>
+                <img src="img/sparse.png">Sparsity in Deep Neural Networks (DNNs) has been widely studied to compress and accelerate the models on resource-constrained environments. It can be generally categorized into unstructured fine-grained sparsity that zeroes out multiple individual weights distributed across the neural network, and structured coarse-grained sparsity which prunes blocks of sub-networks of a neural network. Fine-grained sparsity can achieve a high compression ratio but is not hardware friendly and hence receives limited speed gains. On the other hand, coarse-grained sparsity cannot simultaneously achieve both apparent acceleration on modern GPUs and decent performance. 
+                <br><br>
+                In this project, we are the first to study training from scratch an N:M fine-grained structured sparse network, which can maintain the advantages of both unstructured fine-grained sparsity and structured coarse-grained sparsity simultaneously on specifically designed GPUs. Specifically, a 2:4 sparse network could achieve <b>2×</b> speed-up without performance drop on Nvidia A100 GPUs. 
+                <br><br>
+                Furthermore, we propose a novel and effective ingredient, sparse-refined straight-through estimator (SR-STE), to alleviate the negative influence of the approximated gradients computed by vanilla STE during optimization. We also define a metric, Sparse Architecture Divergence (SAD), to measure the sparse network’s topology change during the training process. Finally, We justify SR-STE’s advantages with SAD and demonstrate the effectiveness of SR-STE by performing comprehensive experiments on various tasks. 
+                <br><br>
+                Codes and models can be accessed at <a href="https://github.com/anonymous-NM-sparsity/NM-sparsity">https://github.com/anonymous-NM-sparsity/NM-sparsity</a>.
+                <br><br>
+                Our experimental results, compared with other state-of-the-art techniques, are shown below:
+
+            </p>
+            <canvas id="myChart"></canvas>
+        </div>
+    </main>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['DSR', 'RigL', 'GMP', 'STR', 'STE', 'SR-STE(ours)'],
+                datasets: [{
+                    label: 'Top-1 Accuracy on ILSVRC-2012 (larger is better)',
+                    data: [71.6, 74.6, 75.6, 76.1, 76.2, 77.0],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: false
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+</body>

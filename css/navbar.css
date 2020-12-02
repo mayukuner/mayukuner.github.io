@@ -1,0 +1,60 @@
+nav.navbar {
+    display: block;
+    height: 100px;
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+nav.navbar .navbar-name {
+    display: block;
+    text-align: left;
+    float: left;
+    margin: 20px 10px;
+    font-size: 30px;
+}
+
+nav.navbar .navbar-menu {
+    display: block;
+    text-align: right;
+    float: right;
+}
+
+nav.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.navbar li {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 5px;
+    display: inline-block;
+    padding: 5px;
+    user-select: none;
+    position: relative;
+}
+
+nav.navbar li:hover {
+    text-decoration: underline;
+}
+
+nav.navbar li:active {
+    color: black;
+}
+
+nav.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+
+nav.navbar a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+nav.navbar a.showing {
+    color: #3f709b;
+}
