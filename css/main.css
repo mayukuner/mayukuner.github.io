@@ -68,6 +68,13 @@ main .detailed-intro img {
 }
 
 
+main .detailed-intro a {
+    color: #3f709b;
+}
+
+main .detailed-intro a:visited {
+    color: #3f709b;
+}
 
 main .detailed-intro p {
     float: right;
